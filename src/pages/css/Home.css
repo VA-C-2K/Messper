@@ -7,8 +7,9 @@
     width: 100vw;
   }
   .users_container {
-    margin-top: 15px;
-    border-right: 2px solid var(--color-6);
+    background: linear-gradient(176deg, #3f3f3f, #141414);
+    margin-top: 0px;
+    border-right: 4px solid #63abe9;
     overflow-y: auto;
   }
   .user_wrapper {
@@ -53,9 +54,10 @@
     width: 100%;
   }
   .messages_user {
-    padding: 10px;
+    background: linear-gradient(176deg, #3f3f3f, #141414);
+    padding: 5px;
     text-align: center;
-    border-bottom: 2px solid var(--color-6);
+    border-bottom: 2px solid #fd35b7;
   }
   .no_conv {
     font-size: 20px;
@@ -83,9 +85,10 @@
     margin-top: -10px;
   }
   .messages {
+    background: linear-gradient(176deg, #3f3f3f, #141414);
     height: calc(100vh - 200px);
     overflow-y: auto;
-    border-bottom: 1px solid var(--color-6);
+    border-bottom: 2px solid #fd35b7;
   }
   .message_wrapper {
     margin-top: 5px;
