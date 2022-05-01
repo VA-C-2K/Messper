@@ -147,7 +147,7 @@ const Register = () => {
                 />
                 <div className="login_page">
                     <div className="login_title">
-                        Messenger
+                        Messper
                     </div>
                     <form className="form" onSubmit={handleSubmit}>
                         <input type="text" placeholder='Name' name="name" value={name} onChange={handleChange} onBlur={validateName} />

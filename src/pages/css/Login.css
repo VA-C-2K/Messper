@@ -22,11 +22,11 @@
     font-size:25px;
   }
   .login_page{
-    min-height: 45vh;
+    min-height:45vh;
     width:350px;
-    background: #fff;
     border-radius: 10px;
     padding-bottom:25px;
+    box-shadow: 0 0 20px #000;
   }
   .login_title{
     color: rgb(27, 27, 27);
@@ -47,10 +47,11 @@
     border:1px solid rgba(0,0,0,0.4);
     border-radius:3px;
     outline:none;
+    box-shadow: 0 0 20px #000;
   }
   .form input:focus{
     border:1px solid rgba(0,0,0,0.7);
-    background: #efefef;
+    background:transparent;
   }
   .form  input[type="email"],
   input[type="text"],
@@ -59,16 +60,20 @@
      position: relative;
      height:35px;
      font-size: 17px;
+     background: transparent;
   }
   .form  input::placeholder{
     font-weight: normal;
     font-size: 13px;
     transition: 0.3s ease;
+    color: #000;
   }
    .form input:focus::placeholder{
     position: absolute;
     font-size: 10px;
     transform: translateY(-13px);
+    background: transparent;
+    box-shadow: 0 0 20px #000;
   }
   .form button{
     border:none;
@@ -91,6 +96,7 @@
     position: relative;
     justify-items: center;
     border: 1px solid #727272;
+    box-shadow: 0 0 20px #000;
     border-radius: 2px;
     width: 80%;
     left:50%;
@@ -108,27 +114,75 @@
   .signup p{
     color:black;
   }
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 586px) {
     .login_container{
       text-align: center;
   }
-    .Login{
-      max-height: 100vh;
+  .login_title{
+    color: rgb(27, 27, 27);
+    padding:30px 0;
+    text-transform:capitalize;
+    font-size:55px;
   }
   .login_page{
-    min-height: 15vh;
-    width:350px;
+    min-height: 25vh;
+    width:660px;
   }
+
+  .form  input[type="email"],
+  input[type="text"],
+  input[type="password"]{
+     padding-left:10px ;
+     position: relative;
+     height:65px;
+     font-size: 35px;
+     margin-bottom: 30px;
   }
-  @media screen and (min-width: 400px) {
-    .login_container{
-      text-align: center;
+  .form  input::placeholder{
+    font-weight: normal;
+    font-size: 35px;
+    transition: 0.3s ease;
   }
-    .Login{
-      min-height: 100vh;
+   .form input:focus::placeholder{
+    position: absolute;
+    font-size: 20px;
+    transform: translateY(-13px);
   }
-  .login_page{
-    min-height:10vh;
-    width:350px;
+  .form button{
+    border:none;
+    background:#043fff;
+    padding: 20px 0;
+    margin-top: 5px;
+    color:#fff;
+    border-radius: 5px;
+    font-weight:bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    outline:none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .signup{
+    border: 2px solid #727272;
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  .signup a{
+     text-decoration: none;
+     margin-left: 5px;
+     color:#008aff;
+     font-weight:bold;
+     margin-bottom: 5px;
+     font-size: 30px;
+  }
+  .signup p{
+    font-size: 28px;
+    color:black;
+  }
+  .login_text{
+    color:#fff;
+    letter-spacing:1.8px;
+    margin-bottom: 30px;
+    font-size:65px;
   }
   }
