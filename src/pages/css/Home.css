@@ -8,7 +8,7 @@
   }
   .users_container {
     background: linear-gradient(176deg, #3f3f3f, #141414);
-    margin-top: 0px;
+    margin-top: 30px;
     border-right: 4px solid #63abe9;
     overflow-y: auto;
   }
@@ -50,12 +50,13 @@
     background: var(--color-5);
   }
   .messages_container {
+    margin-top: 10px;
     position: relative;
     width: 100%;
   }
   .messages_user {
     background: linear-gradient(176deg, #3f3f3f, #141414);
-    padding: 5px;
+    padding: 20px;
     text-align: center;
     border-bottom: 2px solid #fd35b7;
   }
@@ -66,23 +67,48 @@
   }
   .message_form {
     position: absolute;
-    bottom: 0;
-    left: 20%;
+    bottom:0;
+    left: 0%;
     width: 100%;
-    height: 30px;
+    height: 62px;
     display: flex;
+    justify-items: center;
     align-items: center;
+    background-color:#030202;
+    margin-bottom: -48px;
+    margin-top:0px;
   }
   .message_form input {
-    width: 40vw;
-    margin: 0px 10px 10px;
+    width: 50vw;
+    margin: 0px 10px 10px 20px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     outline: none;
     border: none;
   }
+  .message_form button {
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .message_form input[type="text"]{
+    height:28px;
+    margin-top: 15px;
+    background-color: #fff;
+    font-size: 25px;
+  }
+  .message_form input[type="text"]::placeholder{
+    font-weight: normal;
+    font-size: 25px;
+  }
+  .message_form input[type="text"]:focus::placeholder{
+    position: absolute;
+    font-size: 12px;
+    transform: translateY(-13px);
+  }
   .message_form .btn {
-    margin-top: -10px;
+    margin-left: 20px;
   }
   .messages {
     background: linear-gradient(176deg, #3f3f3f, #141414);
@@ -164,7 +190,7 @@
       grid-template-columns: 1.5fr 4.5fr;
     }
     .users_container {
-      margin-top: 10px;
+      margin-top: 70px;
       border-right: 1px solid var(--color-6);
       overflow-y: auto;
     }
@@ -173,9 +199,10 @@
     }
     .sm_container .user_status{
       width: 10px;
-      margin-left: 70px;
-      height: 10px;
+      margin-left: 170px;
+      height: 100px;
       border-radius: 50%;
+   
     }
     .sm_container {
       border-radius:3px;
@@ -190,13 +217,7 @@
     .sm_container:hover{
       background: linear-gradient(0deg, #63abe9, #ff75cf);
         }
-    .message_form input {
-      width: 42vw;
-      margin: 0px 15px;
-    }
-    .message_form .btn {
-      margin: 0px;
-    }
+    
     .message_wrapper {
       margin-top: 5px;
       padding: 0px 10px;
@@ -233,16 +254,23 @@
       border-radius: 10px;
     }
     .no_conv {
-      font-size: 18px;
+      font-size:40px;
       font-weight:400;
     }
     .message_form {
       position: absolute;
-      margin-bottom:1%;
-      left: 1%;
+      left: 0%;
       width: 100%;
-      height: 30px;
+      height: 15px;
       display: flex;
       align-items: center;
+    }
+    .message_form input {
+      width: 65vw;
+      margin: 0px 30px 30px;
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
     }
   }
