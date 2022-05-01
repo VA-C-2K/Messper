@@ -108,8 +108,27 @@
   .signup p{
     color:black;
   }
-  @media screen and (max-width: 576px) {
+  @media screen and (min-width: 576px) {
+    .login_container{
+      text-align: center;
+  }
+    .Login{
+      max-height: 100vh;
+  }
+  .login_page{
+    min-height: 15vh;
+    width:350px;
+  }
+  }
+  @media screen and (min-width: 400px) {
+    .login_container{
+      text-align: center;
+  }
     .Login{
       min-height: 100vh;
+  }
+  .login_page{
+    min-height:10vh;
+    width:350px;
   }
   }
