@@ -8,7 +8,7 @@
   }
   .users_container {
     background: linear-gradient(176deg, #3f3f3f, #141414);
-    margin-top: 30px;
+    margin-top: 60px;
     border-right: 4px solid #63abe9;
     overflow-y: auto;
   }
@@ -55,8 +55,10 @@
     width: 100%;
   }
   .messages_user {
+    margin-top: 20px;
     background: linear-gradient(176deg, #3f3f3f, #141414);
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom:-10px;
     text-align: center;
     border-bottom: 2px solid #fd35b7;
   }
