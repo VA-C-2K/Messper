@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import Img from '../goku3.jpg';
+import Img from '../default.png';
 import Camera from '../components/svg/Camera';
 import { storage,db,auth } from '../firebase';
 import {

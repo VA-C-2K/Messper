@@ -1,5 +1,5 @@
 import React,{useLayoutEffect,useState} from 'react'
-import Img from '../goku3.jpg';
+import Img from '../default.png';
 import {
   onSnapshot,
   doc,
