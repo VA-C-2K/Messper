@@ -14,10 +14,10 @@ const MessageForm = ({handleSubmit,text,setText,setImg}) => {
         id="img" 
         style={{display:'none'}}/>
         <div>
-            <input type="text" style={{caretColor: '#0084ff'}} placeholder='Message' value={text} onChange={e=>setText(e.target.value)} />
+            <input type="text"  placeholder='Message' value={text} onChange={e=>setText(e.target.value)} />
         </div>
         <div>
-            <button className="btn">Send</button>
+            <button style={{background:'rgb(49, 49, 49)',color:"#fff",fontWeight:"400"}} className="btn">Send</button>
         </div>
     </form>
   )

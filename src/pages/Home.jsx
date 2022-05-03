@@ -97,12 +97,12 @@ const Home = () => {
   }
   return (
     <div className="home_container">
-      <div className="users_container">
+      <div style={{marginTop:"30px"}} className="users_container">
         {users.map(user => 
           <User key={user.uid} user={user} selectUser={selectUser} user1={user1} chat={chat}/>
         )}
       </div>
-      <div className="messages_container">
+      <div style={{marginTop:"30px"}} className="messages_container">
         {chat ? (
         <>
         <div className="messages_user">
@@ -121,7 +121,7 @@ const Home = () => {
          />
         </>
         ):(
-        <h3 className='no_conv'>Select a user to start conversation</h3>
+        <h3 style={{marginTop:"30px"}} className='no_conv'>Select a user to start conversation</h3>
         )}
       </div>
     </div>

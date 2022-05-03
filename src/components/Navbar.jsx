@@ -23,15 +23,20 @@ const Navbar = () => {
     setCurrentLocation(location.pathname);
   }, [location.pathname]);
   return (
-    <div className="navbar">
+    <>
       {currentLocation !== "/login" || currentLocation !== "/register" ? (
         <div className="nav">
           {user ? (
-            <>
-              <div className='logo'>
-                <Link to="/"><img src={Logo} alt="logo" /></Link>
-              </div>
-              <ul>
+            <> 
+            <ul>
+              <li className="logo">
+                <Link to="/"> Messper</Link>
+              </li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
                 <li>
                   <Link to="/profile">Profile</Link>
                 </li>
@@ -46,7 +51,7 @@ const Navbar = () => {
           )}
         </div>
       ) : null}
-    </div>
+    </>
   )
 }
 
