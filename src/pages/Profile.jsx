@@ -75,7 +75,7 @@ const Profile = () => {
                     <img src={user.avatar || Img} alt="avatar" />
                     <div className="overlay">
                         <div>
-                            <label htmlFor="photo">
+                            <label  htmlFor="photo">
                                 <Camera />
                             </label>
                             {user.avatar ?<Delete deleteImage={deleteImage}/>:null}
