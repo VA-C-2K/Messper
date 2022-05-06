@@ -132,6 +132,7 @@ const Register = () => {
             if (!namevalidate) notifyNameValidation();
             if (!pwdvalidate) notifyPasswordValidation();
             if (!emailvalidate) emailvalidationmsg();
+            setData({ ...data, error: "The entered data is incorrect, Follow the instructions carefully", loading: false });
         }
     }
     return (
@@ -150,9 +151,9 @@ const Register = () => {
                         Messper
                     </div>
                     <form className="form" onSubmit={handleSubmit}>
-                        <input type="text" placeholder='Name' name="name" value={name} onChange={handleChange} onBlur={validateName} />
-                        <input type="email" placeholder='Email' name="email" value={email} onChange={handleChange} onBlur={validateEmail} />
-                        <input type="password" placeholder='Password' name="password" value={password} onChange={handleChange} onBlur={validatePassword} />
+                        <input type="text" placeholder='Name' name="name" value={name} onChange={handleChange} onBlur={validateName} required/>
+                        <input type="email" placeholder='Email' name="email" value={email} onChange={handleChange} onBlur={validateEmail} required/>
+                        <input type="password" placeholder='Password' name="password" value={password} onChange={handleChange} onBlur={validatePassword} required/>
                         {error ? <p className="error">{error}</p> : null}
                         <button className="btn" disabled={loading}>
                             {loading ? 'Creating ...' : 'Register'}
@@ -161,7 +162,7 @@ const Register = () => {
                     </form>
                     <div className="signup">
                         <p>Already have an account?</p>
-                        <Link to="/login">LogIn</Link>
+                        <Link to="/login" className="a">LogIn</Link>
                     </div>
                 </div>
             </div>

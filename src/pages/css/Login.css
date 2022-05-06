@@ -1,5 +1,7 @@
 .error {
     text-align: center;
+    font-size:22px;
+    font-weight: 700;
     color: #fe0202;
   } 
 
@@ -26,7 +28,8 @@
     width:350px;
     border-radius: 10px;
     padding-bottom:25px;
-    box-shadow: 0 0 20px #000;
+    box-shadow: 0 0 10px #000;
+    background:rgba(0, 0, 0, 0.200);
   }
   .login_title{
     color: rgb(27, 27, 27);
@@ -44,10 +47,10 @@
   }
   .form input{
     margin-bottom:5px;
-    border:1px solid rgba(0,0,0,0.4);
+    border:1px solid rgba(0, 0, 0, 0.726);
     border-radius:3px;
     outline:none;
-    box-shadow: 0 0 20px #000;
+    box-shadow: 0 0 10px #000;
   }
   .form input:focus{
     border:1px solid rgba(0,0,0,0.7);
@@ -95,20 +98,21 @@
   .signup{
     position: relative;
     justify-items: center;
-    border: 1px solid #727272;
-    box-shadow: 0 0 20px #000;
-    border-radius: 2px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px #000;
+    border-radius: 8px;
     width: 80%;
     left:50%;
     transform: translateX(-50%);
     margin-top: 25px;
     padding-bottom: 15px;
+    
   }
-  .signup a{
+  .signup .a{
      text-decoration: none;
      margin-left: 5px;
-     color:#008aff;
-     font-weight:bold;
+     color:#043fff;
+     font-weight:700;
      margin-bottom: 5px;
   }
   .signup p{

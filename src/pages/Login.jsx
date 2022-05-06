@@ -79,6 +79,7 @@ const Login = () => {
         }
         else {
             if (!emailvalidate) emailvalidationmsg();
+            setData({ ...data, error: "The entered data is incorrect, Follow the instructions carefully", loading: false });
         }
     }
     return (
@@ -106,7 +107,7 @@ const Login = () => {
                     </form>
                     <div className="signup">
                         <p>Don't have  an account?</p>
-                        <Link to="/register">SignUp</Link>
+                        <Link to="/register" className="a">SignUp</Link>
                     </div>
                 </div>
             </div>
