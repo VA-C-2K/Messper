@@ -13,8 +13,8 @@
     position: relative;
     justify-items: center;
     align-items: center;
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     border-radius: 50%;
 }
 .spinner::before,.spinner::after{
@@ -33,7 +33,7 @@
 .spinner::after{
     width:85%;
     height:85%;
-    background-color: black;
+    background-color: white;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
