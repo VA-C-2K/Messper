@@ -15,7 +15,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
     });
   }, []);
-  if (!loading) {
+  if (loading) {
     return <Loading />;
   }
   return (
