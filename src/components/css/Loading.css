@@ -1,9 +1,20 @@
+.loadingDiv{
+    position: relative;
+    
+}
+.loadingDiv h2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
 .spinner{
     position: relative;
     justify-items: center;
     align-items: center;
-    width:80px;
-    height:80px;
+    width:200px;
+    height:200px;
     border-radius: 50%;
 }
 .spinner::before,.spinner::after{
@@ -22,7 +33,7 @@
 .spinner::after{
     width:85%;
     height:85%;
-    background-color: var( --color-1);
+    background-color: black;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
